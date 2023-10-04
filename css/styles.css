@@ -5,9 +5,15 @@
     text-decoration: none;
 }
 html{
-    background-image:url('../images/bg.jpg') repeat;
-    height: 1000px;
-    background-color:darkcyan;
+    background-image: url(img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color:darkslateblue;
 }
 .wrapper{
     width:99.9%;
@@ -16,6 +22,7 @@ html{
 }
 .header{
     background-color:#000;
+    position:fixed;
 }
 .list-items__services{
     display:flex;
@@ -35,6 +42,6 @@ html{
 }
 .item__service a:hover{
     color:#00f7ff;
-    transition:1s ease-out color;
-    font-size:25px;
+    transition:5s ease-out font-size;
+    font-size:22px;
 }
