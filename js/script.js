@@ -14,5 +14,5 @@ calc.addEventListener('click',function(){
     }
 })
 integration.addEventListener('click',function(){
-    
+    alert('Ваш запрос отправлен интеграторам. Ожидайте ответа по почте.');
 })
