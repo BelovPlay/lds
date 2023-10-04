@@ -4,6 +4,11 @@
     list-style-type:none;
     text-decoration: none;
 }
+html{
+    background-image:url('../images/bg.jpg') repeat;
+    height: 1000px;
+    background-color:darkcyan;
+}
 .wrapper{
     width:99.9%;
     border:1px solid black;
