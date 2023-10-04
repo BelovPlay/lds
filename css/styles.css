@@ -50,7 +50,6 @@ html{
 .bg{
     z-index:1111;
     width: 99.9%;
-    background-repeat: no-repeat;
 }
 .calc{
     text-align: center;
@@ -61,4 +60,31 @@ html{
     border-radius:12%;
     display:inline-block;
     margin-top: 25px;
+}
+.calcmodal{
+    margin:0px auto;
+    width: 1000px;
+    position:absolute;
+    color:white;
+    font-family:Arial;
+    font-size:22px;
+    border:1px solid red;
+    margin: 0px auto;
+    top:400px;
+    left:400px;
+    display:none;
+}
+.overlay{
+    width:2000px;
+    height:2000px;
+    background:#000;
+    opacity:0.8;
+    position:absolute;
+    top:0;
+    left:0;
+    display:none;
+}
+.calc-title{
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
