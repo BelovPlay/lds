@@ -31,7 +31,7 @@
                     <div class="overlay">
                         <div class="calcmodal">
                             <h2 class="calc-title">Выберите пункты которые важны для Вас</h2>
-                            <form action="index.php">
+                            <form action="php/index.php" method="POST">
                                 <input type="checkbox">Заполнение статей в базе знаний <br>
                                 <input type="checkbox">Импорт каталога товаров<br>
                                 <input type="checkbox">Импорт компаний<br>
@@ -80,6 +80,14 @@
                                 <input type="checkbox">Создание групп<br>
                                 <input type="checkbox">Создание проектов<br>
                                 <input type="submit" value="Отправить запрос на интеграцию проекта" id="integration">
+                            </form>
+                            <form action="php/index.php" method="POST">
+                                <input type="text" placeholder="Введите ваш ID" id="id" name="id">
+                                <input type="text" placeholder="Введите ваше имя" id="name" name="name"><br><br>
+                                <input type="text" placeholder="Введите ваш email" id="mail" name="mail">
+                                <input type="number" placeholder="Введите ваш телефон" id="phone" name="phone">
+                                <input type="text" placeholder="Введите ваш номер билета" id="NumTicket" name="NumTicket">
+                                <input type="submit" value="Отправить данные клиента">
                             </form>
                         </div>
                     </div>
