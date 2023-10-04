@@ -1,0 +1,35 @@
+*{
+    margin:0px;
+    padding:0px;
+    list-style-type:none;
+    text-decoration: none;
+}
+.wrapper{
+    width:99.9%;
+    border:1px solid black;
+    margin:auto;
+}
+.header{
+    background-color:#000;
+}
+.list-items__services{
+    display:flex;
+    justify-content:space-evenly;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    align-items: center;
+}
+.item__service{
+    text-align: center;
+    color:white;
+}
+.item__service a{
+    color:white;
+    font-family:Arial;
+    font-size:20px;
+}
+.item__service a:hover{
+    color:#00f7ff;
+    transition:1s ease-out color;
+    font-size:25px;
+}
