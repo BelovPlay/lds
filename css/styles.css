@@ -68,7 +68,6 @@ html{
     color:white;
     font-family:Arial;
     font-size:22px;
-    border:1px solid red;
     margin: 0px auto;
     top:400px;
     left:400px;
@@ -90,4 +89,7 @@ html{
 }
 #integration:hover{
     cursor: pointer;
+}
+.calcmodal{
+    margin:0px auto;
 }
