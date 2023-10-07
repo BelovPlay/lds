@@ -9,6 +9,3 @@ calc.addEventListener('click',function(){
         overlay.style.display='block';
     }
 })
-integration.addEventListener('click',function(){
-    alert('Ваш запрос отправлен интеграторам. Ожидайте ответа по почте.');
-})
