@@ -15,7 +15,7 @@ $id=$_POST['id'];
 $NumTicket=$_POST['NumTicket'];
 // Данные с чебоксов
 if (!empty($_GET)) { // если форма была отправлена
-    if (isset($_GET[''])) { // если флажок отмечен
+    if (isset($_GET['articleBz'])) { // если флажок отмечен
         echo 'отмечен';
     } else {
         echo 'не отмечен';
