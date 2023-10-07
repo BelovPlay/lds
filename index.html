@@ -31,62 +31,67 @@
                     <div class="overlay">
                         <div class="calcmodal">
                             <h2 class="calc-title">Выберите услуги для приобретения</h2>
-                            <form action="php/index.php" method="GET">
-                                <input type="checkbox" name="articleBz">Заполнение статей в базе знаний <br>
-                                <input type="checkbox" name="importProduct">Импорт каталога товаров<br>
-                                <input type="checkbox" name="importCompanies">Импорт компаний<br>
-                                <input type="checkbox" name="importContacts">Импорт контактов<br>
-                                <input type="checkbox" name="importLeads">Импорт лидов<br>
-                                <input type="checkbox" name="importDeals">Импорт сделок<br>
-                                <input type="checkbox" name="integrateCustomApp">Интеграция кастомных приложений<br>
-                                <input type="checkbox" name="integrateSignature">Интеграция подписи в шаблоны документов<br>
-                                <input type="checkbox" name="integrate1C">Интеграция с 1С<br>
-                                <input type="checkbox" name="importDataOtherCRM">Миграция данных из других CRM<br>
-                                <input type="checkbox" name="settingAnalitycs">Настройка аналитики<br>
-                                <input type="checkbox" name="settingBz">Настройка базы знаний<br>
-                                <input type="checkbox" name="settingBp">Настройка отладка и корректировка бизнес процессов<br>
-                                <input type="checkbox" name="settingViewCards">Настройка видов карточек контакта/компании/лида/сделки<br>
-                                <input type="checkbox" name="settingFunnel">Настройка воронок<br>
-                                <input type="checkbox" name="settingFunnelSP">Настройка воронок смарт процессов<br>
-                                <input type="checkbox" name="lessonsTasks">Настройка и обучение работе с задачами и проектами<br>
-                                <input type="checkbox" name="settingCards">Настройка карточек контакта/компании/лида/сделки<br>
-                                <input type="checkbox" name="settingCardsSP">Настройка карточки смарт процесса<br>
-                                <input type="checkbox" name="settingCustomReports">Настройка кастомных отчетов <br>
-                                <input type="checkbox" name="settingMailTemplates">Настройка почтовых шаблонов<br>
-                                <input type="checkbox" name="settingRoles">Настройка прав доступа для разных сотрудников<br>
-                                <input type="checkbox" name="settingTemplateDocs">Настройка шаблонов документов<br>
-                                <input type="checkbox" name="settingCrmForms">Настройка CRM формы <br>
-                                <input type="checkbox" name="lessonsCalendar">Обучение работы с календарем<br>
-                                <input type="checkbox" name="lessonsCRM">Обучение сотрудников работе в Б24<br>
-                                <input type="checkbox" name="integrateAvito">Подключение авито<br>
-                                <input type="checkbox" name="integrateViber">Подключение вайбера<br>
-                                <input type="checkbox" name="integrateWhatsApp">Подключение ватсапа<br>
-                                <input type="checkbox" name="integrateVK">Подключение Вконтакте<br>
-                                <input type="checkbox" name="integrateInstagram">Подключение инстаграм<br>
-                                <input type="checkbox" name="integrateTransferSite1C">Подключение обмена с 1с управление сайтом<br>
-                                <input type="checkbox" name="integrateOk">Подключение одноклассники<br>
-                                <input type="checkbox" name="integrateOpenLines">Подключение открытых линий<br>
-                                <input type="checkbox" name="integrateMail">Подключение почты<br>
-                                <input type="checkbox" name="integrateTg">Подключение телеграмма<br>
-                                <input type="checkbox" name="integratePhones">Подключение телефонии<br>
-                                <input type="checkbox" name="integrateFacebook">Подключение фейсбук<br>
-                                <input type="checkbox" name="integrateFormVk">Подключение форм с группы вконтакте<br>
-                                <input type="checkbox" name="invitingUsers">Приглашение пользователей<br>
-                                <input type="checkbox" name="settingRolesBz">Распределение доступа к статьям в базе знаний<br>
-                                <input type="checkbox" name="settingRolesGroupProjects">Распределение доступов к группам и проектам<br>
-                                <input type="checkbox" name="settingCompaniesOfRoles">Распределение компаний по ролям (поставщики,контрагенты)<br>
-                                <input type="checkbox" name="settingContactsOfRoles">Распределение контактов по ролям (поставщики,контрагенты)<br>
-                                <input type="checkbox" name="createGroups">Создание групп<br>
-                                <input type="checkbox" name="createPrjects">Создание проектов<br>
-                                <input type="submit" value="Отправить запрос" id="integration">
-                            </form>
-                            <form action="php/index.php" method="POST" class="form-bd">
-                                <input type="text" placeholder="Введите ваше имя" id="name" name="name"><br>
-                                <input type="text" placeholder="Введите ваш email" id="mail" name="mail"><br>
-                                <input type="number" placeholder="Введите ваш телефон" id="phone" name="phone"><br>
-                                <input type="text" placeholder="Введите ваш номер билета" id="NumTicket" name="NumTicket"><br>
-                                <input type="submit" value="Отправить" id="submitdata">
-                            </form>
+                            <div class="calcmodal__forms">
+                                <form action="php/index.php" method="GET">
+                                    <input type="checkbox" name="articleBz">Заполнение статей в базе знаний <br>
+                                    <input type="checkbox" name="importProduct">Импорт каталога товаров<br>
+                                    <input type="checkbox" name="importCompanies">Импорт компаний<br>
+                                    <input type="checkbox" name="importContacts">Импорт контактов<br>
+                                    <input type="checkbox" name="importLeads">Импорт лидов<br>
+                                    <input type="checkbox" name="importDeals">Импорт сделок<br>
+                                    <input type="checkbox" name="integrateCustomApp">Интеграция кастомных приложений<br>
+                                    <input type="checkbox" name="integrateSignature">Интеграция подписи в шаблоны документов<br>
+                                    <input type="checkbox" name="integrate1C">Интеграция с 1С<br>
+                                    <input type="checkbox" name="importDataOtherCRM">Миграция данных из других CRM<br>
+                                    <input type="checkbox" name="settingAnalitycs">Настройка аналитики<br>
+                                    <input type="checkbox" name="settingBz">Настройка базы знаний<br>
+                                    <input type="checkbox" name="settingBp">Настройка отладка и корректировка бизнес процессов<br>
+                                    <input type="checkbox" name="settingViewCards">Настройка видов карточек контакта/компании/лида/сделки<br>
+                                    <input type="checkbox" name="settingFunnel">Настройка воронок<br>
+                                    <input type="checkbox" name="settingFunnelSP">Настройка воронок смарт процессов<br>
+                                    <input type="checkbox" name="lessonsTasks">Настройка и обучение работе с задачами и проектами<br>
+                                    <input type="checkbox" name="settingCards">Настройка карточек контакта/компании/лида/сделки<br>
+                                    <input type="checkbox" name="settingCardsSP">Настройка карточки смарт процесса<br>
+                                    <input type="checkbox" name="settingCustomReports">Настройка кастомных отчетов <br>
+                                    <input type="checkbox" name="settingMailTemplates">Настройка почтовых шаблонов<br>
+                                    <input type="checkbox" name="settingRoles">Настройка прав доступа для разных сотрудников<br>
+                                    <input type="checkbox" name="settingTemplateDocs">Настройка шаблонов документов<br>
+                                    <input type="checkbox" name="settingCrmForms">Настройка CRM формы <br>
+                                    <input type="checkbox" name="lessonsCalendar">Обучение работы с календарем<br>
+                                    <input type="checkbox" name="lessonsCRM">Обучение сотрудников работе в Б24<br>
+                                    <input type="checkbox" name="integrateAvito">Подключение авито<br>
+                                    <input type="checkbox" name="integrateViber">Подключение вайбера<br>
+                                    <input type="checkbox" name="integrateWhatsApp">Подключение ватсапа<br>
+                                    <input type="checkbox" name="integrateVK">Подключение Вконтакте<br>
+                                    <input type="checkbox" name="integrateInstagram">Подключение инстаграм<br>
+                                    <input type="checkbox" name="integrateTransferSite1C">Подключение обмена с 1с управление сайтом<br>
+                                    <input type="checkbox" name="integrateOk">Подключение одноклассники<br>
+                                    <input type="checkbox" name="integrateOpenLines">Подключение открытых линий<br>
+                                    <input type="checkbox" name="integrateMail">Подключение почты<br>
+                                    <input type="checkbox" name="integrateTg">Подключение телеграмма<br>
+                                    <input type="checkbox" name="integratePhones">Подключение телефонии<br>
+                                    <input type="checkbox" name="integrateFacebook">Подключение фейсбук<br>
+                                    <input type="checkbox" name="integrateFormVk">Подключение форм с группы вконтакте<br>
+                                    <input type="checkbox" name="invitingUsers">Приглашение пользователей<br>
+                                    <input type="checkbox" name="settingRolesBz">Распределение доступа к статьям в базе знаний<br>
+                                    <input type="checkbox" name="settingRolesGroupProjects">Распределение доступов к группам и проектам<br>
+                                    <input type="checkbox" name="settingCompaniesOfRoles">Распределение компаний по ролям (поставщики,контрагенты)<br>
+                                    <input type="checkbox" name="settingContactsOfRoles">Распределение контактов по ролям (поставщики,контрагенты)<br>
+                                    <input type="checkbox" name="createGroups">Создание групп<br>
+                                    <input type="checkbox" name="createPrjects">Создание проектов<br>
+                                    <input type="submit" value="Отправить запрос" id="integration">
+                                </form>
+                                <form action="php/index.php" method="POST" class="form-bd">
+                                    <input type="text" placeholder="Введите ваше имя" id="name" name="name" required><br>
+                                    <input type="text" placeholder="Введите ваш email" id="mail" name="mail" required><br>
+                                    <input type="number" placeholder="Введите ваш телефон" id="phone" name="phone" required><br>
+                                    <input type="text" placeholder="Введите ваш номер билета" id="NumTicket" name="NumTicket" required><br>
+                                    <input type="text" placeholder="Введите название вашей компании" required><br>
+                                    <input type="text" placeholder="Введите кол-во сотрудников в штате"><br>
+                                    <input type="text" placeholder="Являетесь ли вы ЛПР?"><br>
+                                    <input type="submit" value="Отправить" id="submitdata">
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
