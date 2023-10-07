@@ -27,14 +27,12 @@ if (!empty($_GET)) { // если форма была отправлена
         echo 'Требуется импорт лидов'.'<br>';
     }if(isset($_GET['importDeals'])){
         echo 'Требуется импорт сделок'.'<br>';
-    }if(isset($_GET['importDeals'])){
-        echo 'Требуется импорт сделок'.'<br>';
     }if(isset($_GET['integrateCustomApp'])){
         echo 'Требуется интеграция с кастомными приложениями'.'<br>';
     }if(isset($_GET['integrateSignature'])){
         echo 'Требуется интеграция подписи в шаблоны документов'.'<br>';
     }if(isset($_GET['integrate1C'])){
-        echo 'Требуется интеграция с 1С';
+        echo 'Требуется интеграция с 1С'.'<br>';
     }if(isset($_GET['importDataOtherCRM'])){
         echo 'Требуется миграция данных из других CRM'.'<br>';
     }if(isset($_GET['settingAnalitycs'])){
