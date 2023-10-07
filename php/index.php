@@ -22,26 +22,26 @@ if (!empty($_GET)) { // если форма была отправлена
     }
 }
 // Данные для БД
-$servername="localhost";
-$username="root";
-$password="";
-$dbname='clients';
-$conn=new mysqli($servername,$username,$password,$dbname);
-if($conn->connect__error){
-    echo 'Подключение не удалось';
-    die('Connection Failed:'.$conn->connect__error);
-}
-$sql="INSERT INTO users (Name,Email,Phone,NumTicket)
-VALUES ('$name','$mail','$phone','$NumTicket')";
-$sql="INSERT INTO users (Name,'',Phone,'');
-VALUES ('$name','$mail','$phone','$numticket')";
-if($conn->query($sql)===TRUE){
-    echo "Данные отправлены";
-}else{
-    echo "Error: " . $sql . '<br>' . $conn->$error;
-    echo 'Данные не отправлены';
-}
-$conn->close();
-?>
+// $servername="localhost";
+// $username="root";
+// $password="";
+// $dbname='clients';
+// $conn=new mysqli($servername,$username,$password,$dbname);
+// if($conn->connect__error){
+//     echo 'Подключение не удалось';
+//     die('Connection Failed:'.$conn->connect__error);
+// }
+// $sql="INSERT INTO users (Name,Email,Phone,NumTicket)
+// VALUES ('$name','$mail','$phone','$NumTicket')";
+// $sql="INSERT INTO users (Name,'',Phone,'');
+// VALUES ('$name','$mail','$phone','$numticket')";
+// if($conn->query($sql)===TRUE){
+//     echo "Данные отправлены";
+// }else{
+//     echo "Error: " . $sql . '<br>' . $conn->$error;
+//     echo 'Данные не отправлены';
+// }
+// $conn->close();
+// ?>
 </body>
 </html>
