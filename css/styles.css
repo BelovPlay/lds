@@ -93,6 +93,10 @@ html{
 .calcmodal{
     margin:0px auto;
 }
-{
-    
+.form-bd{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
