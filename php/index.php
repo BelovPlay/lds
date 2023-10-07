@@ -8,11 +8,11 @@
 <body>
 <?php 
 // Данные с инпутов
-$id=$_POST['Id'];
-$name=$_POST['Name'];
-$mail=$_POST['Email'];
-$phone=$_POST['Phone'];
-$numticket=$_POST['NumTicket'];
+$name=$_POST['name'];
+$phone=$_POST['phone'];
+$mail=$_POST['mail'];
+$id=$_POST['id'];
+$NumTicket=$_POST['NumTicket'];
 // Данные для БД
 $servername="localhost";
 $username="root";
@@ -24,7 +24,7 @@ if($conn->connect__error){
     die('Connection Failed:'.$conn->connect__error);
 }
 $sql="INSERT INTO users (Name,Email,Phone,NumTicket)
-VALUES ('$name','$mail','$phone','$numticket')";
+VALUES ('$name','$mail','$phone','$NumTicket')";
 if($conn->query($sql)===TRUE){
     echo "Данные отправлены";
 }else{
