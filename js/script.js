@@ -4,7 +4,6 @@ let overlay=document.querySelector('.overlay');
 let integration=document.getElementById('integration');
 calc.addEventListener('click',function(){
     event.preventDefault();
-    let answercalc=confirm('Вы хотите открыть калькулятор для расчета стоимости проекта?');
     if(answercalc){
         calcmodal.style.display='block';
         overlay.style.display='block';

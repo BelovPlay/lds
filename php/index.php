@@ -13,10 +13,13 @@ $phone=$_POST['phone'];
 $mail=$_POST['mail'];
 $id=$_POST['id'];
 $NumTicket=$_POST['NumTicket'];
+$articleBz=$_POST['articleBz'];
 // Данные с чебоксов
 if (!empty($_GET)) { // если форма была отправлена
     if (isset($_GET['articleBz'])) { // если флажок отмечен
-        echo 'отмечен';
+        // echo 'отмечен';
+        echo $articleBz;
+        echo $_GET['articleBz'];
     } else {
         echo 'не отмечен';
     }
