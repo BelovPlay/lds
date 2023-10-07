@@ -18,7 +18,7 @@ if (!empty($_GET)) { // если форма была отправлена
     if (isset($_GET['articleBz'])) { // если флажок отмечен
         echo 'Требуется заполнение статей в базе знаний'.'<br>';
     } if(isset($_GET['importProduct'])){
-        echo 'Требуется импорт каталога продуктов'.'<br>';
+        echo 'Требуется импорт каталога товаров'.'<br>';
     }if(isset($_GET['importCompanies'])){
         echo 'Требуется импорт компаний'.'<br>';
     }if(isset($_GET['importContacts'])){
