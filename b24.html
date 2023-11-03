@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LDS | Битрикс24</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <div class="wrapper">
@@ -14,10 +15,10 @@
                         <li class="item__service"><a href="sites.html" class="menu__link">Разработка и поддержка сайтов</a></li>
                         <li class="item__service"><a href="seo.html" class="menu__link">SEO продвижение сайтов</a></li>
                         <li class="item__service"><a href="b24.html" class="menu__link">Продажа и внедрение Битрикс24</a></li>
-                        <li class="item__service"><a href="1c.html" class="menu__link">Продажа и сопровождение продуктов 1С</a></li>
-                        <li class="item__service"><a href="komp.html" class="menu__link">Обслуживание и ремонт компьютерной техники</a></li>
-                        <li class="item__service"><a href="reklama.html" class="menu__link">Интернет реклама</a></li>
-                        <li class="item__service"><a href="marketplace.html" class="menu__link">Размещение на маркетплейсах</a></li>
+                        <!-- <li class="item__service"><a href="1c.html" class="menu__link">Продажа и сопровождение продуктов 1С</a></li> -->
+                        <!-- <li class="item__service"><a href="komp.html" class="menu__link">Обслуживание и ремонт компьютерной техники</a></li> -->
+                        <!-- <li class="item__service"><a href="reklama.html" class="menu__link">Интернет реклама</a></li> -->
+                        <!-- <li class="item__service"><a href="marketplace.html" class="menu__link">Размещение на маркетплейсах</a></li> -->
                     </ul>
                 </nav>
             </div>
@@ -25,7 +26,20 @@
         <main class="content">
             <section>
                 <div class="section__inner">
-
+                    <div class="rates">
+                        <div class="rates__inner">
+                            <div class="rate__package" id="rate-package">
+                                <h2 class="ratePackage__title">Пакетное внедрение</h2>
+                                <p class="rate__describe-text">Тарифы для быстрого запуска</p>
+                                <a href=""><img src="img/b24.jpg" alt="" id="linkRatePackage"></a>
+                            </div>
+                            <div class="rate__project" id="rate-project">
+                                <h2 class="rateProject__title">Проектное внедрение</h2>
+                                <p class="rate__describe-text">Тарифы для сложных задач</p>
+                                <a href=""><img src="img/b24.jpg" alt="" id="linkRateProjects"></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section>
@@ -79,6 +93,108 @@
                 
             </div>
         </footer>
+        <div class="modalBlockProject">
+            <div class="options" id="calcProjectModal">
+                <details>
+                    <summary>Работы по настройке CRM</summary>
+                    <p><input type="checkbox" name="" id="regUser"><label for="regUser">Регистрация пользователей в CRM</label></p>
+                    <p><input type="checkbox" name="" id="setRoles"><label for="setRoles">Настройка ролей и прав доступов</label></p>
+                    <p><input type="checkbox" name="" id="setViewLeads"><label for="setViewLeads">Настройка отображений лида</label></p>
+                    <p><input type="checkbox" name="" id="setViewContacts"><label for="setViewContacts">Настройка отображений контакта</label></p>
+                    <p><input type="checkbox" name="" id="setViewCompanies">Настройка отображений компании</p>
+                    <p><input type="checkbox" name="" id="setViewDeals">Настройка отображений сделки</p>
+                    <p><input type="checkbox" name="" id="setleads">Настройка воронки лидов</p>
+                    <p><input type="checkbox" name="" id="setDeals">Создание и настройка воронок по разным направлениям сделок</p>
+                    <p><input type="checkbox" name="" id="setFieldsLeads">Настройка полей в карточке лида</p>
+                    <p><input type="checkbox" name="" id="setFieldsContacts">Настройка полей в карточке контакта</p>
+                    <p><input type="checkbox" name="" id="setFieldsCompanies">Настройка полей в карточке компании</p>
+                    <p><input type="checkbox" name="" id="setFieldsDeals">Настройка полей в карточке сделки</p>
+                    <p><input type="checkbox" name="" id="setSmart">Настройка смарт процессов</p>
+                    <p><input type="checkbox" name="" id="setFieldsSmart">Настройка полей в карточке смарт процесса</p>
+                    <p><input type="checkbox" name="" id="AutoLeads">Автоматизация воронки лидов</p>
+                    <p><input type="checkbox" name="" id="AutoDeals">Автоматизация воронок продаж</p>
+                    <p><input type="checkbox" name="" id="AutoSmart">Автоматизация воронок смарт процессов</p>
+                    <p><input type="checkbox" name="" id="setTemplates">Настройка шаблонов документов</p>
+                    <p><input type="checkbox" name="" id="setAnalytics">Настройка сквозной аналитики</p>
+                    <p><input type="checkbox" name="" id="setReports">Настройка отчетов</p>
+                    <p><input type="checkbox" name="" id="setMarketing">Настройка CRM маркетинга</p>
+                    <p><input type="checkbox" name="" id="importLeadOtherCRM">Импорт лидов с других CRM</p>
+                    <p><input type="checkbox" name="" id="importContactsOtherCRM">Импорт контактов с других CRM</p>
+                    <p><input type="checkbox" name="" id="importCompaniesOtherCRM">Импорт компаний с других CRM</p>
+                    <p><input type="checkbox" name="" id="importDealsOtherCRM">Импорт сделок с других CRM</p>
+                </details>
+                <details>
+                    <summary>Работы по настройке контакт центра</summary>
+                    <p><input type="checkbox" name="" id="integroPhone">Интеграция телефонии с Б24</p>
+                    <p><input type="checkbox" name="" id="integroMail">Интеграция почты с Б24</p>
+                    <p><input type="checkbox" name="" id="integroAvito">Интеграция Avito с Битрикс24</p>
+                    <p><input type="checkbox" name="" id="integroViber">Интеграция Viber с Б24</p>
+                    <p><input type="checkbox" name="" id="integroWhatsApp">Интеграция WhatsApp с Б24</p>
+                    <p><input type="checkbox" name="" id="integroVK">Интеграция Вконтакте с Б24</p>
+                    <p><input type="checkbox" name="" id="integroInsta">Интеграция Instagram с Б24</p>
+                    <p><input type="checkbox" name="" id="integroSitefc">Интеграция обмена сайта на 1С Битрикс с Б24</p>
+                    <p><input type="checkbox" name="" id="integrook">Интеграция Одноклассниками с Б24</p>
+                    <p><input type="checkbox" name="" id="intergroTelegram">Интеграция Telegram с Б24</p>
+                    <p><input type="checkbox" name="" id="integroFacebook">Интеграция Facebook с Б24</p>
+                    <p><input type="checkbox" name="" id="integroSite">Интеграция сайта с Б24</p>
+                    <p><input type="checkbox" name="" id="integroOnlineChat">Установка онлайн чата на ваш сайт</p>
+                    <p><input type="checkbox" name="" id="integroCRMForms">Создание и настройка CRM форм с Б24</p>
+                    <p><input type="checkbox" name="" id="integroEmailCallTracking">Настройка Email и Call трекинга</p>
+                    <p><input type="checkbox" name="" id="integroOther">Настройка других интеграций</p>
+                </details>
+                <details>
+                    <summary>Внедрение онлайн офиса</summary>
+                    <p><input type="checkbox" name="" id="lessonChat">Обучение по использованию чатов и видеозвонков</p>
+                    <p><input type="checkbox" name="" id="lessonNews">Обучение по использованию новостями Б24</p>
+                    <p><input type="checkbox" name="" id="lessonCalendar">Обучение по использованию календаря в Б24</p>
+                    <p><input type="checkbox" name="" id="integroOtherCalendar">Интеграция прочих календарей с Б24</p>
+                    <p><input type="checkbox" name="" id="lessonDisk">Обучение по использованию диска Б24</p>
+                    <p><input type="checkbox" name="" id="setBase">Настройка базы знаний</p>
+                    <p><input type="checkbox" name="" id="setAccessBz">Настройка прав доступа к базам знаний</p>
+                    <p><input type="checkbox" name="" id="createWorkGroup">Создание и настройка рабочих групп</p>
+                    <p><input type="checkbox" name="" id="lessonGroup">Обучение по использованию групп</p>
+                    <p><input type="checkbox" name="" id="lessonCardEmployee">Обучение по карточке сотрудника в Б24</p>
+                    <p><input type="checkbox" name="" id="lessonReportsManager">Обучение по отчетам руководителя</p>
+                </details>
+                <details>
+                    <summary>Работы по настройке задач и проектов</summary>
+                    <p><input type="checkbox" name="" id="lessonTasks">Обучение по использованию задач </p>
+                    <p><input type="checkbox" name="" id="lessonViewsTasks">Обучение по разным представлениям задач</p>
+                    <p><input type="checkbox" name="" id="lessonFocusAttention">Обучение фокусировке внимания в задачах</p>
+                    <p><input type="checkbox" name="" id="lessonProject">Обучение по проектам</p>
+                    <p><input type="checkbox" name="" id="AccessTasks">Создание и настройка ролей и прав доступа </p>
+                    <p><input type="checkbox" name="" id="lessonSetTasksEmail">Обучение постановке задач на email подрядчикам</p>
+                    <p><input type="checkbox" name="" id="templateDocs">Настройка шаблонов задач</p>
+                    <p><input type="checkbox" name="" id="SetAutoTasks">Настройка автоматизации в задачах</p>
+                    <p><input type="checkbox" name="" id="lessonEfficiency">Обучение отслеживания эффективности сотрудников</p>
+                    <p><input type="checkbox" name="" id="lessonStartTasksAI">Обучение созданию задач через гугл помощника или яндекс Алису</p>
+                </details>
+                <details>
+                    <summary>Работы по созданию сайтов и магазинов внутри Битрикс24</summary>
+                    <p><input type="checkbox" name="" id="createSitesTemplate">Создание и настройка сайтов по шаблону</p>
+                    <p><input type="checkbox" name="" id="integroOnlineChatSite">Интеграция онлайн чата на сайт</p>
+                    <p><input type="checkbox" name="" id="setCRMsite">Настройка и интеграция CRM форм на сайт</p>
+                    <p><input type="checkbox" name="" id="setAnalytics">Подключение яндекс метрики и гугл аналитики</p>
+                    <p><input type="checkbox" name="" id="designCorporateColor">Настройка оформления сайта в корпоративных цветах компании </p>
+                    <p><input type="checkbox" name="" id="accessRolesSites">Создание и настройка ролей и прав доступа </p>
+                    <p><input type="checkbox" name="" id="createMagazineSite">Создание интернет магазина в Битрикс24 </p>
+                    <p><input type="checkbox" name="" id="createGoodsMagazine">Создание и настройка товаров компании для интернет магазина</p>
+                    <p><input type="checkbox" name="" id="integroSystemPay">Настройка разных платежных систем для оплаты заказов и выставления счетов</p>
+                </details>
+                <details>
+                    <summary>Видеозвонки HD</summary>
+                    <p><input type="checkbox" name="" id="lessonVideocalls">Обучение по использованию видеозвонков </p>
+                    <p><input type="checkbox" name="" id="lessonBg">Обучение по размытию и настройке заднего фона</p>
+                    <p><input type="checkbox" name="" id="lessonDemo">Обучение по демонстрации экрана</p>
+                    <p><input type="checkbox" name="" id="lessonFuncTalk">Обучение по функции "хочу сказать"</p>
+                    <p><input type="checkbox" name="" id="lessonRecordVideoCalls">Обучение по записи видеозвонков</p>
+                    <p><input type="checkbox" name="" id="lessonCalliOSAndroid">Обучение по входящему вызову на iOS и Android</p>
+                </details>
+            </div>    
+            <div id="sumOptions">Итоговая сумма внедрения: </div>
+        </div>
+        <div id="sum"></div>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>

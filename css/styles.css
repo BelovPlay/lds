@@ -13,19 +13,17 @@ html{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-color:darkslateblue;
+    background-color:blueviolet;
 }
 .wrapper{
     width:99.9%;
-    border:1px solid black;
     margin:auto;
+    border:none;
 }
 .header{
     background-color:#000;
-    position:fixed;
-    width: 99.9%;
+    width:100%;
     text-align: center;
-    height:200px;
 }
 .list-items__services{
     display:flex;
@@ -92,4 +90,68 @@ html{
 }
 .calcmodal{
     margin:0px auto;
+}
+.rates__inner{
+    display:flex;
+    justify-content:space-evenly;
+}
+.rate__describe-text{
+    text-align: center;
+}
+.rate__package,.rate__project{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+.rates{
+    margin-top:150px;
+}
+.ratePackage__title,.rateProject__title{
+    font-family:Arial;
+    font-size: 32px;
+    color:#fff;
+}
+.rate__describe-text{
+    font:24px sans-serif;
+    margin-bottom:50px;
+    margin-top: 25px;
+    color:#fff;
+}
+details{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+    /* border:1px solid #000; */
+    width: 100%;
+    text-align: center;
+    cursor:pointer;
+    border-radius:25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    color:#000;
+}
+*{
+    font-family:sans-serif;
+}
+input{
+    text-align: center;
+}
+.options{
+    margin: 0px auto;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    display:none;
+    color:#fff;
+    margin-top: 100px;
+}
+details p{
+    margin-top:20px;
+}
+#sumOptions{
+    color:#fff;
 }
