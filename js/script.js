@@ -9,6 +9,7 @@ let calcPackage=document.getElementById('calcPackageModal');
 //Вешаем обработчики события для отрабажения модального окна
 btnCalcPackage.addEventListener('click',function(){
     event.preventDefault();
+<<<<<<< HEAD
     calcProject.style.display='block';
 })
 btnCalcProject.addEventListener('click',function(){
